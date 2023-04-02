@@ -1,0 +1,15 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: real-staq
+      cluster-nodes: localhost:9300
+      repositories:
+        enabled: true
+      properties:
+        path:
+          logs: target/elasticsearch/logs
+          data: target/elasticsearch/data
+server:
+  port: 8080
+  error:
+    include-message: always
