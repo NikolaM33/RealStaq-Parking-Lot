@@ -19,18 +19,26 @@ Running the API
 The API should be accessible at http://localhost:8080.
 
 Running Loader 
+
   loader will run automacticlly after run application
   
  Api Endpoints:
+ 
   GET /parking-lot/nearest 
+  
     Returns the closest parking lot to the specified location
-  GET /parking-lot/calculate-location-score 
+  GET /parking-lot/calculate-location-score
+  
     Returns location parking score. (Ratio of parking lots within 1km radius to the total number of parking lots)
 
 Usage:
+
   Postman collection (Parking-lot.postman_collection.json)
+  
   curl calls (replace values with your values):
+  
     -curl -X GET -H "Content-Type: application/json" http://localhost:8080/parking-lot/nearest -d "{\"latitude\": 40.7128, \"longitude\": -74.0060}"
+    
     -curl -X GET -H "Content-Type: application/json" http://localhost:8080/parking-lot/calculate-location-score -d "{\"latitude\": 40.7128, \"longitude\": -74.0060}"
  
     
