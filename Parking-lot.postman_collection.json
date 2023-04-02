@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "af4fd80d-16b3-4c5c-8c0a-8f7ef06156b5",
+		"name": "Parking-lot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Calculate Location Parking score",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitude\": 34.0238693,\r\n    \"longitude\": -118.2820923\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-lot/calculate-location-score",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-lot",
+						"calculate-location-score"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find nearest parking lot",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitude\": 34.0238693,\r\n    \"longitude\": -118.2820923\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-lot/nearest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-lot",
+						"nearest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
